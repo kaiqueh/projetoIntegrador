@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+    background: linear-gradient(135deg, #3a8bdc, #6dd5ed);
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.form-container {
+    flex: 1;
+    padding: 40px;
+    background: linear-gradient(135deg, #66a6ff, #89f7fe);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.illustration-container {
+    flex: 1;
+    background-color: #e0f7fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.illustration img {
+    width: 80%;
+    max-width: 300px;
+}
+.illustration img {
+    width: 100%;        /* A imagem ocupa toda a largura do contêiner */
+    height: 100%;       /* A imagem ocupa toda a altura do contêiner */
+    object-fit: cover;  /* Ajusta a imagem para cobrir o espaço sem distorção */
+    max-width: 100%;    /* Impede que a imagem exceda a largura do contêiner */
+    max-height: 100%;   /* Impede que a imagem exceda a altura do contêiner */
+    border-radius: 10px; /* (Opcional) arredonda as bordas */
+}

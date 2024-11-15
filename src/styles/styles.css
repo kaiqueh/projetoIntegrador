@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #3a8bdc, #6dd5ed);
+}
+
+.container {
+    display: flex;
+    width: 70%;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+    width: 50%;
+    padding: 40px;
+}
+
+.illustration {
+    width: 50%;
+    background: #f5f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #aaa;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"] {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: rgb(215, 214, 214);
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    border: none;   
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s; 
+    margin-top: 17px 
+}
+
+button:hover {
+    background-color: green
+}   
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #777;
+}
+
+.forgot-password {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+.illustration img {
+    width: 100%;        /* A imagem ocupa toda a largura do contêiner */
+    height: 100%;       /* A imagem ocupa toda a altura do contêiner */
+    object-fit: cover;  /* Ajusta a imagem para cobrir o espaço sem distorção */
+    max-width: 100%;    /* Impede que a imagem exceda a largura do contêiner */
+    max-height: 100%;   /* Impede que a imagem exceda a altura do contêiner */
+    border-radius: 10px; /* (Opcional) arredonda as bordas */
+}

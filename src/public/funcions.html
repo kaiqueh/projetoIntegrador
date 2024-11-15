@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Screen</title>
+    <link rel="stylesheet" href="../../src/styles/styles.css">
+    <script src="../src/controller/back.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="login-form">
+            <h2>Welcome</h2>
+            <form id="loginForm" onsubmit="submitForm(event)">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <div class="options">
+                    <label>
+                        <input type="checkbox" id="remember"> Remember
+                    </label>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                    <a href="creat.html" class="forgot-password">Creat Acount?</a>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="illustration">
+           <img src="../imgs/coruja.png" alt="coruja">
+        </div>
+    </div>
+</body>
+</html>
+    
